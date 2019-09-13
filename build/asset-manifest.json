@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-search-card/static/css/main.1779617f.chunk.css",
+    "main.js": "/react-search-card/static/js/main.5ba79249.chunk.js",
+    "main.js.map": "/react-search-card/static/js/main.5ba79249.chunk.js.map",
+    "runtime~main.js": "/react-search-card/static/js/runtime~main.a53aea9d.js",
+    "runtime~main.js.map": "/react-search-card/static/js/runtime~main.a53aea9d.js.map",
+    "static/js/2.fee831a4.chunk.js": "/react-search-card/static/js/2.fee831a4.chunk.js",
+    "static/js/2.fee831a4.chunk.js.map": "/react-search-card/static/js/2.fee831a4.chunk.js.map",
+    "index.html": "/react-search-card/index.html",
+    "precache-manifest.0fd7f71fcc798b3f847e06168c2d4a3b.js": "/react-search-card/precache-manifest.0fd7f71fcc798b3f847e06168c2d4a3b.js",
+    "service-worker.js": "/react-search-card/service-worker.js",
+    "static/css/main.1779617f.chunk.css.map": "/react-search-card/static/css/main.1779617f.chunk.css.map"
+  }
+}
