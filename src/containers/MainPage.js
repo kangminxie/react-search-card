@@ -41,14 +41,6 @@ class MainPage extends React.Component {
       <div>
         <h2>This is the Main Page</h2>
         {Projects}
-        <div id="main-form">
-          <label htmlFor="fname">First Name: </label>
-          <input type="text" id="fname" name="firstName"/>
-          <br />
-          <label htmlFor="lname">Last Name: </label>
-          <input type="text" id="lname" name="lastName"/>
-          <br /><br />
-        </div>
         <hr />
       </div>
     );
