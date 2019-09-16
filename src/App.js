@@ -1,29 +1,28 @@
 import React from 'react';
 
+import Jsonplaceholder from './apis/Jsonplaceholder';
 import CardList from './components/cardview/CardList';
 import SearchBox from './components/searchbox/SearchBox';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './App.css';
 
 // index.html use semantic ui instead of bootstrap4
 class App extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {
-      monsters: [],
-      searchField: ''
-    };
+  state = {
+    monsters: [],
+    searchField: '',
   }
 
   componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response => response.json())
-      .then(users => this.setState({ monsters: users }));
+    Jsonplaceholder.get('/users')
+    .then( response => {
+      this.setState( { monsters: response.data });
+    });
   }
 
-  onSearchChange = event => {
+  onSearchChangeHandler = event => {
     this.setState({ searchField: event.target.value });
   };
 
@@ -36,7 +35,7 @@ class App extends React.Component {
     return (
       <div className='App'>
         <Header />
-        <SearchBox onSearchChange={this.onSearchChange} />
+        <SearchBox onSearchChange={this.onSearchChangeHandler} />
         <CardList monsters={filteredMonsters} />
         <Footer />
       </div>

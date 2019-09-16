@@ -3,7 +3,7 @@ import React from 'react';
 
 // functional component
 const Header = () => {
-  const welcome = 'Game Start from Here - App';
+  const welcome = 'React-Search-Card App from Here';
   return (
     <div className="footer">
       <h1>{welcome}</h1>
