@@ -8,7 +8,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import './App.css';
 
-// index.html use semantic ui instead of bootstrap4
 class App extends React.Component {
   state = {
     monsters: [],
@@ -25,6 +24,7 @@ class App extends React.Component {
   onSearchChangeHandler = event => {
     this.setState({ searchField: event.target.value });
   };
+  // setState can take time, need to be carful for future
 
   render() {
     const { monsters, searchField } = this.state;
