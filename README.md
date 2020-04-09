@@ -1,7 +1,7 @@
 # react-search-card
 A simple deploy demo for pure react.js project
 
-Click https://MountKingX.github.io/react-search-card to see
+Click https://mountkingx.github.io/react-search-card/ to see
 
 Right now, the search/filter input is for client-side search only, which is limited by current querying (every time same result is returned)
 
